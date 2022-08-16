@@ -4,6 +4,8 @@ import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import styles from "../css-modules/tabs.module.css";
+import DavidOJohan from "../images/davidojohan.jpg";
+import Link from "@mui/material/Link";
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -79,18 +81,32 @@ export default function AboutTabs() {
       <TabPanel value={value} index={1}>
         <h2>Om PsycheDevs</h2>
         <p>
-          Möt Johan (psykologstudent) och David (läkarstudent). Studenter,
-          vänner och "PsycheDevs" med aspirationen att skapa en plats där det
-          fritt kan diskuteras allt som kan ingå i den mänskliga upplevelsen och
-          hur man kan utveckla sitt psyke för att må och prestera bättre.
+          Möt vännerna Johan (psykologstudent) och David (läkarstudent). Vi har
+          aspirationen att skapa en plats där det fritt kan diskuteras allt som
+          kan ingå i den mänskliga upplevelsen och hur man kan utveckla sitt
+          psyke för att må och prestera bättre.
         </p>
         <p>
           Tillsammans hjälper vi varandra att bättre förstå och utveckla våra
           psyken. Psyket kan exempelvis innehålla fysiska, emotionella,
           intellektuella och spirituella komponenter. Detta är delar vi med stor
-          nyfikenhet och ödmjukhet vill fördjupa oss i på PsycheDevs podcast.
-          Välkommen!
+          nyfikenhet och ödmjukhet vill fördjupa oss i på{" "}
+          <a href="https://www.youtube.com/channel/UCiAMrpObX21fkKh_rVuGHww">
+            PsycheDevs podcast
+          </a>
+          . Välkommen! 🧠🚀
         </p>
+        <figure>
+          <img
+            src={DavidOJohan}
+            alt="David och Johan tillsammans i Johans cykelförråd"
+            className={styles.davidOJohan}
+          />{" "}
+          <figcaption>
+            På bilden har David och Johan precis bastat (som de brukar göra
+            minst en gång i veckan tillsammans i Johans 90-graders bastu){" "}
+          </figcaption>
+        </figure>
       </TabPanel>
     </Box>
   );
