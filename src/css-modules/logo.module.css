@@ -1,0 +1,17 @@
+@media screen and (max-width: 600px) {
+  .logo {
+    width: 30vw;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .logo {
+    width: 14vw;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .logo {
+    width: 10.5vw;
+  }
+}
