@@ -1,5 +1,4 @@
 import "./App.css";
-import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import AboutTabs from "./components/tabs";
 import PsycheDevsLogoNoBg from "./images/PSYCHEDEVS_SE_NO_BG.png";

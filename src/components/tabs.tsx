@@ -67,7 +67,7 @@ export default function AboutTabs() {
       </Box>
       <TabPanel value={value} index={0}>
         <h2>Utveckla ditt psyke med Johan och David</h2>
-        <h5>Introavsnitt av för PsycheDevs podcast:</h5>
+        <h5>Introavsnitt för PsycheDevs podcast:</h5>
 
         <iframe
           src="https://www.youtube-nocookie.com/embed/60a7Ghv8qZQ"
