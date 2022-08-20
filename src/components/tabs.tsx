@@ -6,6 +6,7 @@ import Box from "@mui/material/Box";
 import styles from "../css-modules/tabs.module.css";
 import DavidOJohan from "../images/davidojohan.jpg";
 import Link from "@mui/material/Link";
+import ContactForm from "./contactForm";
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -61,8 +62,9 @@ export default function AboutTabs() {
           scrollButtons="auto"
           textColor="inherit"
         >
-          <Tab label="PsycheDevs Podcast" {...a11yProps(0)} />{" "}
+          <Tab label="PsycheDevs Podcast" {...a11yProps(0)} />
           <Tab label="Om PsycheDevs" {...a11yProps(1)} />
+          <Tab label="Skriv till Johan och David" {...a11yProps(2)} />
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
@@ -107,6 +109,9 @@ export default function AboutTabs() {
             minst en gång i veckan tillsammans i Johans 90-graders bastu){" "}
           </figcaption>
         </figure>
+      </TabPanel>
+      <TabPanel value={value} index={2}>
+        <ContactForm />
       </TabPanel>
     </Box>
   );
